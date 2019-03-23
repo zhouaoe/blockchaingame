@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import * as Actions from '../Actions.js';
 import {connect} from 'react-redux';
 
@@ -16,12 +16,12 @@ function Counter({caption, onIncrement, onDecrement, value}) {
   );
 }
 
-Counter.propTypes = {
-  caption: PropTypes.string.isRequired,
-  onIncrement: PropTypes.func.isRequired,
-  onDecrement: PropTypes.func.isRequired,
-  value: PropTypes.number.isRequired
-};
+// Counter.propTypes = {
+//   caption: PropTypes.string.isRequired,
+//   onIncrement: PropTypes.func.isRequired,
+//   onDecrement: PropTypes.func.isRequired,
+//   value: PropTypes.number.isRequired
+// };
 
 function mapStateToProps(state, ownProps) {
   return {

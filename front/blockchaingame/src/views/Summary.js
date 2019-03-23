@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import {connect} from 'react-redux';
 
 function Summary({value}) {
@@ -7,9 +7,6 @@ function Summary({value}) {
   );
 }
 
-Summary.PropTypes = {
-  value: PropTypes.number.isRequired
-};
 
 function mapStateToProps(state) {
   let sum = 0;
