@@ -4,7 +4,7 @@ import 'antd/lib/date-picker/style';
 
 import "./MainLayout.css"
 import {
-    Layout, Menu, Breadcrumb, Icon,
+    Layout, Menu,
 } from 'antd';
 
 const { SubMenu } = Menu;
