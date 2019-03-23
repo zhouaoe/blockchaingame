@@ -2,7 +2,7 @@ import React from 'react';
 import 'antd/lib/date-picker/style/css';
 import 'antd/lib/date-picker/style';
 
-// import style from "./MainLayout.css"
+import "./MainLayout.css"
 import {
     Layout, Menu, Breadcrumb, Icon,
 } from 'antd';
@@ -21,9 +21,9 @@ class MainLayout extends React.Component {
                     defaultSelectedKeys={['2']}
                     style={{ lineHeight: '64px' }}
                 >
-                    <Menu.Item key="1">nav 1</Menu.Item>
-                    <Menu.Item key="2">nav 2</Menu.Item>
-                    <Menu.Item key="3">nav 3</Menu.Item>
+                    <Menu.Item key="1">Block Chain</Menu.Item>
+                    {/*<Menu.Item key="2">nav 2</Menu.Item>*/}
+                    {/*<Menu.Item key="3">nav 3</Menu.Item>*/}
                 </Menu>
             </Header>
             <Layout>
@@ -55,16 +55,17 @@ class MainLayout extends React.Component {
                     </Menu>
                 </Sider>
                 <Layout style={{ padding: '0 24px 24px' }}>
-                    <Breadcrumb style={{ margin: '16px 0' }}>
-                        <Breadcrumb.Item>Home</Breadcrumb.Item>
-                        <Breadcrumb.Item>List</Breadcrumb.Item>
-                        <Breadcrumb.Item>App</Breadcrumb.Item>
-                    </Breadcrumb>
+                    {/*<Breadcrumb style={{ margin: '16px 0' }}>*/}
+                        {/*<Breadcrumb.Item>Home</Breadcrumb.Item>*/}
+                        {/*<Breadcrumb.Item>List</Breadcrumb.Item>*/}
+                        {/*<Breadcrumb.Item>App</Breadcrumb.Item>*/}
+                    {/*</Breadcrumb>*/}
+                    <text>Username:xxxxxxxxxxxxxxxxxxxxxx</text>
                     <Content style={{
                         background: '#fff', padding: 24, margin: 0, minHeight: 280,
                     }}
                     >
-                        Content
+                        {this.props.children}
                     </Content>
                 </Layout>
             </Layout>
